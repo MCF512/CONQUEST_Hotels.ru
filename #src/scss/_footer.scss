@@ -1,0 +1,45 @@
+.footer {
+  background-color: #444240;
+  padding: 67px 0;
+  color: #fff;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: end;
+    font-family: $display;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+  }
+
+  &__column {
+
+    &__logo {
+      margin-bottom: 23px;
+    }
+
+    &__title {
+      margin-bottom: 32px;
+      font-size: 0.875em;
+    }
+
+    &__item {
+      opacity: 0.75;
+      margin-bottom: 15px;
+      font-size: 0.75em;
+    }
+
+    &__link {
+      transition: opacity 0.3s;
+
+      &:hover {
+        opacity: 0.4;
+      }
+    }
+
+  }
+}

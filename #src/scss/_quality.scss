@@ -1,0 +1,66 @@
+.quality {
+  padding-top: 52px;
+  padding-bottom: 20px;
+  background-image: url(../img/quality__bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  &__slide {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+    img {
+      margin: 0 70px;
+    }
+
+    &__title {
+      font-family: $display;
+      font-weight: 400;
+      font-size: 2em;
+      margin-bottom: 38px;
+    }
+
+    &__text {
+      max-width: 380px;
+      line-height: 1.5;
+      margin-bottom: 45px;
+    }
+
+    &__button {
+      font-weight: 500;
+      font-size: 0.75em;
+      text-transform: uppercase;
+      color: #fff;
+      background-color: #D4B098;
+      padding: 26px 38px;
+      transition: opacity 0.3s;
+
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+
+  &__nav {
+    display: flex;
+    max-width: 65px;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 40%;
+
+    &__current {
+      font-family: $prata;
+      font-size: 0.75em;
+    }
+
+    &__next,
+    &__prev {
+      transition: opacity 0.3s;
+
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+}
